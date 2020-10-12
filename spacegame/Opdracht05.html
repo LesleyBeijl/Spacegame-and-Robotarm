@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SpaceShip Opdracht01</title>
+    <title>SpaceShip Opdracht05</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <script src="js/spacegame.js" type="application/javascript"></script>
@@ -17,9 +17,14 @@
         //Eigen acties
         spaceShip.run(function () {
             // code  start
-
-
-
+            for(var i =1;i < 4; i++){
+            for(var a =1;a < 3; a++){
+            spaceShip.wait();
+            }
+            for(var b =1;b < 4; b++){
+            spaceShip.moveBackward();
+            }
+            }
             // code  einde
         });
     </script>
